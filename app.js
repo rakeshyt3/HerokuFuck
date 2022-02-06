@@ -1,7 +1,7 @@
 // Function to validate src parameter
 function validateSrc() {
     if (!unr) {
-        unr = "Itz-fork";
+        unr = "rakeshyt";
         return
     }
     let spl = unr.split("/");
@@ -12,8 +12,8 @@ function validateSrc() {
 
 // Function to setup fork button
 function setupForkButton() {
-    if (unr == "Itz-fork") {
-        document.getElementById("fork").innerHTML = `<a class="github-button" href="https://github.com/Itz-fork" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-size='large' aria-label="Follow @Itz-fork on GitHub">Follow @Itz-fork</a>`
+    if (unr == "rakeshyt") {
+        document.getElementById("fork").innerHTML = `<a class="github-button" href="https://github.com/RakeshYt" data-color-scheme="no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;" data-size='large' aria-label="Follow @RakeshYt on GitHub">Follow @RakeshYt</a>`
     } else {
         document.getElementById("fork").innerHTML = `<a class='github-button' href='https://github.com/${unr}' data-color-scheme='no-preference: dark_high_contrast; light: dark_dimmed; dark: dark_dimmed;' data-icon='octicon-repo-forked' data-size='large' data-show-count='true' aria-label='Fork ${unr} on GitHub'>Fork it!</a>`
     }
@@ -24,16 +24,16 @@ function setupForkButton() {
 function redirectToHeroku() {
     let input = document.getElementById("repo-link").value;
     if (!input || input == "") {
-        return throwError(true, "Please enter your forked repo link!");
+        return throwError(true, "First Fork Original Repo Then Enter Your Forked Repo Link 😌");
     }
 
     if (input.includes(unr)) {
-        return throwError(true, "You are trying to deploy the original repo which was banned from heroku. Please enter your forked repo link or kindly fuck off!");
+        return throwError(true, "You are trying to deploy the original repo which was banned from heroku. Please enter your forked repo link or kindly fuck off! 🥲");
     }
 
     const regex = /https?:\/\/github\.com\/(?:[^\/\s]+\/)+/g
     if (!regex.test(input)) {
-        return throwError(true, "Please enter a github repo url!");
+        return throwError(true, "Please Enter A Github Repo Url!");
     }
 
     window.open(`https://heroku.com/deploy?template=${input}`, "_blank")
