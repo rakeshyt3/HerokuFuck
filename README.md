@@ -3,7 +3,7 @@ This is a simple website to get the heroku deploy link from a github repository.
 
 ## Usage
 
-- Open the [Redirect to Heroku Website](https://itz-fork.github.io/Redirect-to-Heroku)
+- Open the [Redirect to Heroku Website](https://RakeshYt1.github.io/HerokuFuck)
     - You can pass `src` parameter to add fork button on the page. Once you passed it you can't get the deploy link for the same github repo
     - **Ex:** `https://itz-fork.github.io/Redirect-to-Heroku?src=YOUR-GITHUB-USERNAME/REPO-NAME`
 
